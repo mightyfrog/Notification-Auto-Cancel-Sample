@@ -18,7 +18,7 @@ import android.widget.Toast
  */
 class NotificationListener : NotificationListenerService() {
 
-    override fun onBind(intent: Intent?): IBinder {
+    override fun onBind(intent: Intent?): IBinder? {
         postNotification()
 
         return super.onBind(intent)
